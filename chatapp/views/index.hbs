@@ -1,0 +1,21 @@
+<div class="top-page-container d-flex justify-content-center align-items-center">
+    <div class="top-page-box">
+        <div class="logo">
+            <img class="logo_img" src="/img/logo_transparent.png" alt="logo">
+        </div>
+        <div class="container-fluid" style="background-color:#BAD3FF;">
+            <div class="container-fluid" style="padding:10px;">
+                <form method="post" action="/room">
+                    <div class="index-user_name">
+                        <input type="text" id="userName" name="userName" class="index-user_name_text p-2" placeholder="名前">
+                    </div>
+                    <div class="index-enter text-center">
+                        <button id="enterButton" type="button" class="common-button index-enter_button btn btn-success" style="font-size:20px;" onclick="enter();" disabled>入室</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/javascripts/common/socket.js"></script>
+<script src="/javascripts/index/index.js"></script>

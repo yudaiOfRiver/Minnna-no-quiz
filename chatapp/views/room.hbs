@@ -1,0 +1,65 @@
+<input id="userName" type="hidden" value="{{userName}}">
+
+<header class="header-chatpage d-flex align-items-center justify-content-between">
+    <div class="room-exit d-flex justify-content-center align-items-center" onclick="exit();">
+        <i class="bi bi-chevron-left"></i>
+    </div>
+    <div class='d-flex'>
+        <div class="col-auto px-1 d-flex align-items-center position-relative">
+            <button id="commandNavButton" type="button" class="p-1 d-flex align-items-center btn btn-secondary">
+                <i class="bi bi-question-circle mr-1"></i>
+                コマンド一覧
+            </button>
+            <div id="commandNavContent" class="text-nowrap position-absolute p-2 command-nav hide">
+                <p class="mb-0">回答：/answer</p>
+                <p class="mb-0">出題：/question</p>
+                <p class="mb-0">締切：/question-end</p>
+            </div>
+        </div>
+        <div class="col-auto px-1 d-flex align-items-center position-relative">
+            <button id="participantsButton" type="button" class="p-1 d-flex align-items-center btn btn-secondary">
+                <i class="bi bi-people mr-1"></i>
+                <span id="participantsCount">0</span>
+            </button>
+            <div id="participantsContent" class="text-nowrap position-absolute p-2 participants-content hide">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main-content">
+    <div id="problemContent" class="card card-problem-container flex-row justify-content-center hide">
+        <div class="card card-problem">
+            <div class="card-header card-problem-title">
+                <h5 class="card-problem-title-font" id="questionField-title"></h5>
+            </div>
+            <div class="card-body card-problem-content">
+                <h5 class="card-problem-content-font" id="questionField-content"></h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-box-id" class="room-thread message-box px-2">
+        <div id="thread"></div>
+    </div>
+</div>
+
+<div class="chat-input d-flex justify-content-center align-items-center">
+    <div  class="row align-items-center" style="margin:0; paddding:0;">
+        <div class="col-auto px-1">
+            <textarea class="room-message_textarea p-2" id="message"></textarea>
+        </div>
+        <div class="col-auto px-1">
+            <button id="publishButton" type="button" class="d-flex align-items-center common-button room-publish_button btn btn-primary disabled" onclick="publish();"><i class="bi bi-send"></i>送信</button>
+        </div>
+    </div>           
+</div>
+
+<script src="/javascripts/common/socket.js"></script>
+<script src="/javascripts/room/enter.js"></script>
+<script src="/javascripts/room/publish.js"></script>
+<script src="/javascripts/room/memo.js"></script>
+<script src="/javascripts/room/exit.js"></script>
+<script src="/javascripts/room/element.js"></script>
+<script src="/javascripts/room/participants.js"></script>

@@ -1,0 +1,352 @@
+/*
+ * 画面全体に関する設定
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px "Lucida Grande", Meiryo, Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+    background-color: #bad3ff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #00b7ff;
+}
+
+header {
+    background-color: #5d99ff;
+}
+
+/* .header-top {
+  height:65px;
+  margin-bottom:50px
+} */
+
+.header-chatpage {
+    height: 40px;
+}
+
+/*
+ * ボタンの共通設定
+ */
+.common-button {
+}
+
+/*
+ * トップ画面（index.hbs）に関する設定
+ */
+
+.top-page-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.top-page-box {
+    width: 90vw;
+    max-width: 500px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo_img {
+    width: 50vw;
+    max-width: 300px;
+}
+
+.index-user_name {
+    margin: 0 auto;
+}
+
+.index-user_name_text {
+    width: 100%;
+    height: 60px;
+    margin: 0 0;
+    font-size: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+.index-enter {
+    padding: 20px 0;
+}
+
+.index-enter_button {
+    width: 150px;
+    height: 65px;
+}
+
+/*
+ * チャットルーム画面（room.hbs）に関する設定
+ */
+
+.chat-notice {
+    display: flex;
+    justify-content: center;
+}
+
+.chat-notice > span {
+    padding: 5px 9px;
+    background-color: #778899;
+    color: white;
+    border-radius: 15px;
+}
+
+.chat-notice-answer {
+}
+
+.chat-notice-answer-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.chat-notice-answer-title {
+    border-bottom: 1px solid #bad3ff;
+    font-size: 18px;
+}
+
+.room-message {
+}
+
+.room-message_textarea {
+    width: 500px;
+    height: 42px;
+    border-radius: 10px;
+    border-color: #dddddd;
+    background-color: #eeeeee;
+}
+
+.room-submit {
+}
+
+.room-publish_button {
+    height: 40px;
+}
+
+.room-publish_button > i {
+    margin-right: 4px;
+}
+
+.room-memo_button {
+}
+
+.room-exit {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.room-exit:hover {
+    background-color: #eeeeeec3;
+}
+
+.room-exit_button {
+}
+
+.card-problem-container {
+    background-color: transparent;
+    border: none;
+    height: 150px;
+}
+
+.card-problem-container.hide {
+    display: none;
+}
+
+.card-problem {
+    width: 60%;
+    height: 80%;
+    border-radius: 0.25rem;
+    text-align: center;
+    margin: auto;
+    border: none;
+}
+
+.card-problem-title {
+    background-color: #5d99ff;
+}
+
+.card-problem-title-font {
+    font-weight: bold;
+}
+
+.card-problem-content-font {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card-problem-content {
+    background-color: #9bbffc;
+}
+
+#thread {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#thread > * {
+    margin: 8px 0;
+}
+
+.chat-input {
+    height: 50px;
+    background-color: white;
+}
+
+.main-content {
+    /* 画面高さ-ヘッダー高さ-インプット欄高さ */
+    height: calc(100vh - 40px - 65px);
+}
+
+.message-box {
+    /* main-content高さ - card-problem-container高さ */
+    height: calc(100% - 150px);
+    overflow-y: scroll;
+}
+
+.card-problem-container.hide + .message-box {
+    height: 100%;
+}
+
+.chat-details {
+}
+
+.chat-name {
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.chat-container {
+    column-gap: 8px;
+}
+
+.chat-date {
+    font-size: 12px;
+    color: #565656;
+}
+
+.chat-message {
+    border-radius: 10px;
+    max-width: 50%;
+    font-size: 14px;
+    padding: 5px 15px;
+    overflow-wrap: break-word;
+}
+
+.chat-message.me {
+    background-color: #9bbffc;
+}
+
+.chat-message.not-me {
+    background-color: white;
+}
+
+.chat-section.answer .chat-message {
+    color: rgb(235, 99, 99);
+}
+
+.command-nav {
+    bottom: 0;
+    transform: translateY(110%);
+    background-color: white;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.256);
+}
+.command-nav.hide {
+    display: none;
+}
+
+.participants-content {
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(110%);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.256);
+}
+.participants-content.hide {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .room-message_textarea {
+        width: 280px;
+    }
+
+    .card-problem {
+        width: 95%;
+        height: 85%;
+    }
+
+    .card-problem-container {
+        height: 100px;
+    }
+
+    .card-problem-content {
+        height: 60%;
+    }
+
+    .card-problem-content-font {
+        font-size: 15px;
+    }
+
+    .card-problem-title {
+        height: 40%;
+    }
+
+    .card-problem-title-font {
+        font-size: 10px;
+    }
+
+    .message-box {
+        /* main-content高さ - card-problem-container高さ */
+        height: calc(100% - 100px);
+        overflow-y: scroll;
+    }
+
+    .card-problem-container.hide + .message-box {
+        height: 100%;
+    }
+
+    #thread {
+        /* list-style-type: none; */
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .chat-section {
+        margin-bottom: 10px;
+    }
+
+    .chat-message {
+        border-radius: 10px;
+        max-width: 70%;
+        padding: 6px 10px;
+    }
+
+    .chat-name {
+        margin-bottom: 1px;
+    }
+
+    .chat-notice > span {
+        padding: 4px 10px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .chat-date {
+        font-size: 10px;
+    }
+}
