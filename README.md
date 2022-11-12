@@ -6,50 +6,27 @@
 <details>
   <summary>目次</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">問題意識と作った経緯</a></li>
+    <li><a href="#roadmap">遊び方</a></li>
+    <li><a href="#roadmap">開発環境</a></li>
+    <li><a href="#contributing">機能</a></li>
   </ol>
 </details>
 
+## 問題意識と経緯
+
+大学院への進学、就職活動の開始に伴い、多くの出会いがあった年でした。そんな中、多くの出会いはオンライン上でのものでした。そのほとんどが、5人程度の複数人でのグループ活動でした。
+音声での会話は、同時に複数人が行うことができず、単位時間あたりのコミュニケーション量が減少してしまいます。しかし、チャットを利用することで、人数が増えれば触れるほど相対的に効率の良いコミュニケーションが実現できます。さらに、初心者同志でもよりお互いのことを知れるような仕組みが必要であると考えました。
+
+そこで、私は**チャット形式のクイズアプリ**である**みんなのクイズ**を開発しました。
+
+## 遊び方
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-つくった経緯
-
-Here's why:
-* 理由１
-* 理由2
-* 理由3
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-
-### 開発環境
+## 開発環境
 
 このセクションでは、アプリ開発に使用した主要なフレームワークやライブラリ、環境を一望します。
-
-
 * Node.js
 * socket.io
 * express
@@ -59,22 +36,27 @@ Of course, no one template will serve all projects since your needs may be diffe
 * JQuery
 
 
-## 使い方
+## 機能
+[aaaa][link1]
+
+
+
+<img width="1370" alt="スクリーンショット 2022-11-12 14 09 33" src="https://user-images.githubusercontent.com/104077941/201460680-25859e76-fd9a-4227-a740-4d85f5d71960.png">
 
 
 
 
-## 
+<img width="1371" alt="" src="https://user-images.githubusercontent.com/104077941/201460671-db697f04-3041-46b3-8195-701f75f7adbe.png">
+<img width="1368" alt="スクリーンショット 2022-11-12 14 13 01" src="https://user-images.githubusercontent.com/104077941/201460673-6df32681-3693-41b1-aea8-48bda5252aef.png">
+<img width="1371" alt="スクリーンショット 2022-11-12 14 12 04" src="https://user-images.githubusercontent.com/104077941/201460674-dc716740-a84d-438a-8cc8-58f9e5e6a192.png">
+<img width="1372" alt="スクリーンショット 2022-11-12 14 11 52" src="https://user-images.githubusercontent.com/104077941/201460675-a06b996e-7ec2-4359-aba3-f38b9faa13a0.png">
+<img width="1368" alt="スクリーンショット 2022-11-12 14 10 33" src="https://user-images.githubusercontent.com/104077941/201460676-42a55a32-ea78-4027-9ba1-b5874cf80230.png">
+<img width="1364" alt="スクリーンショット 2022-11-12 14 10 15" src="https://user-images.githubusercontent.com/104077941/201460678-faf6be84-1af3-470f-b67d-a405f8d9da90.png">
+
+<img width="1370" alt="スクリーンショット 2022-11-12 14 09 08" src="https://user-images.githubusercontent.com/104077941/201460683-bc3bc1e6-acd0-4a3e-8c5c-8117d0e73189.png">
+[]<img width="1365" alt="スクリーンショット 2022-11-12 14 08 52" src="https://user-images.githubusercontent.com/104077941/201460684-de5f07fd-4aa9-4551-b819-77c7101aec69.png">
 
 
-
-
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+<!-- 　画像リンク
+[link1]: https://user-images.githubusercontent.com/104077941/201460671-db697f04-3041-46b3-8195-701f75f7adbe.png
+-->
