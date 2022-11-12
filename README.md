@@ -1,19 +1,18 @@
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img width="312" alt="image" src="https://user-images.githubusercontent.com/104077941/201036761-9b7522bb-97b0-45ef-9cf8-398f72d03664.png">
-  </a>
+<a href="https://github.com/othneildrew/Best-README-Template">
+  <img width="312" alt="image" src="https://user-images.githubusercontent.com/104077941/201036761-9b7522bb-97b0-45ef-9cf8-398f72d03664.png">
+</a>
 
 <details>
   <summary>目次</summary>
   <ol>
-    <li><a href="#usage">問題意識と作った経緯</a></li>
-    <li><a href="#roadmap">遊び方</a></li>
-    <li><a href="#roadmap">開発環境</a></li>
-    <li><a href="#contributing">機能</a></li>
+    <li><a href="#問題意識と開発理由">問題意識と開発理由</a></li>
+    <li><a href="#遊び方">遊び方</a></li>
+    <li><a href="#開発環境">開発環境</a></li>
+    <li><a href="#機能">機能</a></li>
   </ol>
 </details>
 
-## 問題意識と経緯
+## 問題意識と開発理由
 
 大学院への進学、就職活動の開始に伴い、多くの出会いがあった年でした。そんな中、多くの出会いはオンライン上でのものでした。そのほとんどが、5人程度の複数人でのグループ活動でした。
 音声での会話は、同時に複数人が行うことができず、単位時間あたりのコミュニケーション量が減少してしまいます。しかし、チャットを利用することで、人数が増えれば触れるほど相対的に効率の良いコミュニケーションが実現できます。さらに、初心者同志でもよりお互いのことを知れるような仕組みが必要であると考えました。
@@ -22,41 +21,77 @@
 
 ## 遊び方
 
+それでは遊び方を説明します。ここでは、2人のユーザーが参加する場合を想定し、２つのブラウザを使って双方の画面遷移を説明します。
+  
+<img width="900" alt="入室画面1" src="https://user-images.githubusercontent.com/104077941/201461894-c73cf6f6-d81c-4e2f-b109-9ff83a6ba693.png">
+<br>
+1. 「みんなのクイズ」のURLにアクセスすると、ログイン画面が表示されます。名前でログインしてください。
+<br><br>
+  
+<img width="900" alt="入室画面2" src="https://user-images.githubusercontent.com/104077941/201461928-82e34cd4-f1ed-439c-b2fc-4c00f6370c1e.png">
+<br>
+2. お好きな名前でログインしてください。ただし、他のユーザーと重複する名前を使用した場合は警告がでるので、再度異なる名前でログインしてください。
+<br><br>
+  
+<img width="900" alt="入室ユーザー確認画面" src="https://user-images.githubusercontent.com/104077941/201461916-7ab6cceb-acac-42f2-b861-5fd2c4dfe02c.png">
+<br>
+3. 右上のボタンから、入室しているユーザーの一覧を表示できます。
+<br><br>
+  
+  
+<img width="900" alt="メッセージ送信画面" src="https://user-images.githubusercontent.com/104077941/201462052-4011f900-de77-4a94-8948-62dd96145c6d.png">
+<br>
+4. ルームの中では、入室しているユーザーと自由にメッセージのやりとりができます。
+<br><br>
+  
+<img width="900" alt="出題画面1" src="https://user-images.githubusercontent.com/104077941/201462142-1d875e82-5283-4382-ab16-429c66ddc637.png">
+<br>
+5. このアプリのメイン機能であるクイズの出題、回答はコマンドを通して行うことができます。このルーム内で使用できるコマンドの一覧を、右上の「コマンド一覧」ボタンから確認できます。
+<br>
+* /answer : クイズに回答します
+* /question : クイズを出題します
+* /question-end : クイズの出題を締め切ります
+<br>
+ここでは、左側のユーザーでクイズを出題します。
+<br><br>
+
+<img width="900" alt="出題画面2" src="https://user-images.githubusercontent.com/104077941/201462171-cc140dd9-917f-4de3-a754-b39f20299515.png">
+<br>
+6. 
+<br><br>
+<img width="900" alt="出題画面3" src="https://user-images.githubusercontent.com/104077941/201462189-4c4f1fb0-10f0-46e1-8cf7-9a71a6892a2f.png">
+<br>
+  
+<img width="900" alt="回答画面1" src="https://user-images.githubusercontent.com/104077941/201462309-a636fe4b-cc2a-415b-8884-4a3ee0c0c64f.png">
+<br>
+  
+  
+<img width="900" alt="回答画面2" src="https://user-images.githubusercontent.com/104077941/201462361-b3157e93-1977-4dac-a90b-f494ce80e7cb.png">
+<br>
+  
+<img width="900" alt="締め切り画面1" src="https://user-images.githubusercontent.com/104077941/201462453-2c047a08-dc01-4162-8f1b-1900430ce87e.png">
+<br>
+  
+<img width="900" alt="締め切り画面2" src="https://user-images.githubusercontent.com/104077941/201462459-57b2f698-ea2f-48cc-b847-a42995d1f83d.png">
+<br>
+
+
+
+
+
 
 
 ## 開発環境
 
-このセクションでは、アプリ開発に使用した主要なフレームワークやライブラリ、環境を一望します。
 * Node.js
 * socket.io
 * express
-※ Handlebars
+* Handlebars
 * HTML / CSS
 * Bootstrap
 * JQuery
 
 
-## 機能
-[aaaa][link1]
+## その他の機能
 
 
-
-<img width="1370" alt="スクリーンショット 2022-11-12 14 09 33" src="https://user-images.githubusercontent.com/104077941/201460680-25859e76-fd9a-4227-a740-4d85f5d71960.png">
-
-
-
-
-<img width="1371" alt="" src="https://user-images.githubusercontent.com/104077941/201460671-db697f04-3041-46b3-8195-701f75f7adbe.png">
-<img width="1368" alt="スクリーンショット 2022-11-12 14 13 01" src="https://user-images.githubusercontent.com/104077941/201460673-6df32681-3693-41b1-aea8-48bda5252aef.png">
-<img width="1371" alt="スクリーンショット 2022-11-12 14 12 04" src="https://user-images.githubusercontent.com/104077941/201460674-dc716740-a84d-438a-8cc8-58f9e5e6a192.png">
-<img width="1372" alt="スクリーンショット 2022-11-12 14 11 52" src="https://user-images.githubusercontent.com/104077941/201460675-a06b996e-7ec2-4359-aba3-f38b9faa13a0.png">
-<img width="1368" alt="スクリーンショット 2022-11-12 14 10 33" src="https://user-images.githubusercontent.com/104077941/201460676-42a55a32-ea78-4027-9ba1-b5874cf80230.png">
-<img width="1364" alt="スクリーンショット 2022-11-12 14 10 15" src="https://user-images.githubusercontent.com/104077941/201460678-faf6be84-1af3-470f-b67d-a405f8d9da90.png">
-
-<img width="1370" alt="スクリーンショット 2022-11-12 14 09 08" src="https://user-images.githubusercontent.com/104077941/201460683-bc3bc1e6-acd0-4a3e-8c5c-8117d0e73189.png">
-[]<img width="1365" alt="スクリーンショット 2022-11-12 14 08 52" src="https://user-images.githubusercontent.com/104077941/201460684-de5f07fd-4aa9-4551-b819-77c7101aec69.png">
-
-
-<!-- 　画像リンク
-[link1]: https://user-images.githubusercontent.com/104077941/201460671-db697f04-3041-46b3-8195-701f75f7adbe.png
--->
