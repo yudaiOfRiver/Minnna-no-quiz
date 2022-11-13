@@ -24,57 +24,61 @@
 それでは遊び方を説明します。ここでは、2人のユーザーが参加する場合を想定し、２つのブラウザを使って双方の画面遷移を説明します。
   
 <img width="900" alt="入室画面1" src="https://user-images.githubusercontent.com/104077941/201461894-c73cf6f6-d81c-4e2f-b109-9ff83a6ba693.png">
-<br>
-1. 「みんなのクイズ」のURLにアクセスすると、ログイン画面が表示されます。名前でログインしてください。
-<br><br>
+1. 「みんなのクイズ」のURLにアクセスすると、ログイン画面が表示されます。
+<br><br><br>
   
 <img width="900" alt="入室画面2" src="https://user-images.githubusercontent.com/104077941/201461928-82e34cd4-f1ed-439c-b2fc-4c00f6370c1e.png">
-<br>
 2. お好きな名前でログインしてください。ただし、他のユーザーと重複する名前を使用した場合は警告がでるので、再度異なる名前でログインしてください。
-<br><br>
+<br><br><br>
   
 <img width="900" alt="入室ユーザー確認画面" src="https://user-images.githubusercontent.com/104077941/201461916-7ab6cceb-acac-42f2-b861-5fd2c4dfe02c.png">
-<br>
 3. 右上のボタンから、入室しているユーザーの一覧を表示できます。
-<br><br>
+<br><br><br>
   
   
 <img width="900" alt="メッセージ送信画面" src="https://user-images.githubusercontent.com/104077941/201462052-4011f900-de77-4a94-8948-62dd96145c6d.png">
-<br>
 4. ルームの中では、入室しているユーザーと自由にメッセージのやりとりができます。
-<br><br>
+<br><br><br>
   
 <img width="900" alt="出題画面1" src="https://user-images.githubusercontent.com/104077941/201462142-1d875e82-5283-4382-ab16-429c66ddc637.png">
-<br>
 5. このアプリのメイン機能であるクイズの出題、回答はコマンドを通して行うことができます。このルーム内で使用できるコマンドの一覧を、右上の「コマンド一覧」ボタンから確認できます。
 <br>
+
 * /answer : クイズに回答します
 * /question : クイズを出題します
 * /question-end : クイズの出題を締め切ります
 <br>
-ここでは、左側のユーザーでクイズを出題します。
-<br><br>
+この例では、左側のユーザーでクイズを出題し、右側のユーザーで回答することにします。
+左側のユーザーで /question コマンドを使い、クイズを出題します。
+<br><br><br>
 
 <img width="900" alt="出題画面2" src="https://user-images.githubusercontent.com/104077941/201462171-cc140dd9-917f-4de3-a754-b39f20299515.png">
-<br>
-6. 
-<br><br>
+6. コマンドが正常に認識されると、クイズの解答を求められるので入力します。
+<br><br><br>
+
+
 <img width="900" alt="出題画面3" src="https://user-images.githubusercontent.com/104077941/201462189-4c4f1fb0-10f0-46e1-8cf7-9a71a6892a2f.png">
-<br>
+7. クイズが出題されると、すべてのユーザーでクイズと出題者が画面上に表示されます。
+<br><br><br>
   
 <img width="900" alt="回答画面1" src="https://user-images.githubusercontent.com/104077941/201462309-a636fe4b-cc2a-415b-8884-4a3ee0c0c64f.png">
-<br>
+8. 右側のユーザーで、/answer コマンドを使ってクイズに回答します。
+<br><br><br>
   
   
 <img width="900" alt="回答画面2" src="https://user-images.githubusercontent.com/104077941/201462361-b3157e93-1977-4dac-a90b-f494ce80e7cb.png">
-<br>
-  
+9. 受け付けた回答は、赤文字で表示されます。
+<br><br><br>
+
+
 <img width="900" alt="締め切り画面1" src="https://user-images.githubusercontent.com/104077941/201462453-2c047a08-dc01-4162-8f1b-1900430ce87e.png">
-<br>
+10. 左側のユーザーで、クイズの回答を締め切ります。
+<br><br><br>
   
 <img width="900" alt="締め切り画面2" src="https://user-images.githubusercontent.com/104077941/201462459-57b2f698-ea2f-48cc-b847-a42995d1f83d.png">
 <br>
-
+11. クイズの回答が締め切られた旨が全ユーザーに伝わります。このとき、回答者には自分の回答と問題の解答が表示されます。
+<br><br><br>
 
 
 
@@ -90,8 +94,10 @@
 * HTML / CSS
 * Bootstrap
 * JQuery
+* AWS EC2
 
 
 ## その他の機能
-
+* 整合性のない
+## その他の機能
 
